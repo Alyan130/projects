@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: rgb(17, 148, 255);
+    color: aliceblue;
+    width: 100%;
+}
+
+#cross{
+    display: none;
+}
+
+ nav ul{
+    float: right;
+    margin-right:20px
+}
+
+ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+ul li a{
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 70px;
+    color: white;
+    line-height: 80px;
+}
+
+a:active,a:hover{
+    background-color: rgba(237, 237, 237, 0.503);
+}
+
+
+#checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:952px) {
+    .logo{
+        font-size:30px;
+        padding: 0 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    #checkbtn{
+        display: block;
+    }
+
+    .slider{
+        position:fixed;
+        height: 100vh;
+           width: 100%;
+           top: 80px;
+           left:-100%;
+           text-align:center;
+           background: #2c3e50;
+    }
+
+.show{
+    position:fixed;
+        height: 100vh;
+           width: 100%;
+           top: 80px;
+           left:0;
+           text-align:center;
+           background: #2c3e50;
+           transition: all .3s ease;
+}
+
+    ul li{
+        display: block;
+    }
+
+    ul li a{
+        font-size: 20px;
+        transition: all .3s ease;
+    }
+
+    ul li a:active, ul li a:hover{
+        background-color:rgba(17, 148, 255);
+    }
+
+}
