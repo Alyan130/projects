@@ -9,7 +9,7 @@ menu.addEventListener("click",()=>{
 });
 
 cross.addEventListener("click",()=>{
-    slider.classList.toggle("show");
+    slider.classList.toggle("show")
     menu.style.display="inline";
     cross.style.display="none";
 })
